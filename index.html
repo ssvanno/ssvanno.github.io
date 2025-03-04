@@ -8,47 +8,100 @@
 </head>
 
 <body>
-  <h4><strong>This is a temporary portfolio website created for a school assignment</strong></h4>
-  <h1>Souvanno Souvannasane's Portfolio Website</h1>
-  <div>
-    <h2>About Me</h2>
-    <p>Hello, I'm Souvanno Souvannasane. A student at mohawk college currently attending my 4th semester in the Software
-      Development program</p>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <a class="navbar-brand" href="#" id="pad-left">Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#education">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#resume">Resume</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container text-center">
+    <h4><strong class="text-warning bg-dark rounded">This is a temporary portfolio website created for a school
+        assignment</strong></h4>
+
+    <h1 class="text-light">Souvanno Souvannasane's Portfolio Website</h1>
+    <div class="row ">
+      <div class="col md-6 rounded bg-dark text-light" id="about">
+        <h2>About Me</h2>
+        <p>Hello, I'm Souvanno Souvannasane. A student at mohawk college aspiring to become a software developer and possibly a game developer. 
+          <br><br>
+          I'm currently attending my 4th semester in the Software Development program</p>
+      </div>
+      <div class="col md-2" id="spacer">
+      </div>
+    
+    <div class="col md-6 rounded bg-dark text-light" id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>C#</li>
+        <li>Unity</li>
+        <li>Java</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>SQL</li>
+      </ul>
+    </div>
   </div>
-  <div>
-    <h2>Education</h2>
-    <ul>
-      <li>Software Development - Mohawk College</li>
-    </ul>
-  </div>
-  <div>
-    <h2>Skills</h2>
-    <ul>
-      <li>C#</li>
-      <li>Unity</li>
-      <li>Java</li>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-      <li>SQL</li>
-    </ul>
-  </div>
-  <div>
+  <br>
+  <div id="projects">
+    <div class="bg-info rounded text-dark">
     <h2>Projects</h2>
     <h3>Untitled Bullet Hell Game</h3>
-    <p>This is a game that my friend and I made for a school project within 10 days using the Unity game engine. It's a relatively short <a href="https://en.wikipedia.org/wiki/Bullet_hell">Danmaku</a> or bullet hell game inspired heavily by a game called 
-    <a href="https://en.wikipedia.org/wiki/Touhou_Project">Touhou Project</a>. The game is not meant to be a full game but rather a demonstration of our ability to create a game within a short time frame. Which is why the game is a single boss fight that lasts around 2-3 minutes that is supposed to present a challenge to players who even have experience in games of this genre.
+    <p>This is a game that my friend and I made for a school project within 10 days using the Unity game engine. It's a
+      relatively short <a href="https://en.wikipedia.org/wiki/Bullet_hell" target="_blank">Danmaku</a> or bullet hell
+      game inspired heavily by a game called
+      <a href="https://en.wikipedia.org/wiki/Touhou_Project" target="_blank">Touhou Project</a>. The game is not meant
+      to be a full game but rather a demonstration of our ability to create a game within a short time frame. Which is
+      why the game is a single boss fight that lasts around 2-3 minutes that is supposed to present a challenge to
+      players who even have experience in games of this genre.
     </p>
-    <br>A link to the game download can be found <a href="https://github.com/ssvanno/game_demo">Here</a>.</p>
-    <img src="Game_Screenshot.png" alt="Screenshot of gameplay" width="500" height="300">
+    <br>A link to the game download can be found <a
+      href="https://drive.google.com/file/d/119CXdBaZ1a3L0KRDJ5h6v4dooNNB5NjT/view?usp=sharing"
+      target="_blank">Here</a>.</p></div>
+    <img src="media/Game_Screenshot.png" alt="Screenshot of gameplay" width="800" height="500">
   </div>
-  <div>
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:"></a>"</p>
-  </div>
-  <div>
+<br>
+  <div id="resume">
+    <div class="bg-info rounded text-dark">
     <h2>Resume</h2>
-    <a href="Resume.pdf">Resume</a>
+    <a href="media/Resume.pdf">Resume</a>
+  </div>
+  <div>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top bg-dark">
+      <div class="col-md-4 d-flex align-items-center">
+        <span class="mb-3 mb-md-0 text-light" id="pad-left">© 2025 Souvanno Souvannasane</span>
+      </div>
+      
+      
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-light" href="tel:289-788-6084">289-788-6084</a></li><br>
+        <li class="ms-3"><a class="text-light" href="mailto:000895582@mohawkcollege.ca">000895582@mohawkcollege.ca</a></li>
+      </ul>
+    </footer>
   </div>
 </body>
 
